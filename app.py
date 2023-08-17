@@ -2,6 +2,7 @@ import os
 from bottle import route, run, template, static_file
 from os.path import dirname, abspath, join
 
+#added these 2 lines an update the def serve_static
 CURDIR = dirname( abspath( __file__ ))
 static_root = os.path.join(CURDIR, 'static', 'images')
 index_html = '''My first web app! By <strong>{{ author }}</strong>.'''
