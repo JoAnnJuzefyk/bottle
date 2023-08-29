@@ -40,6 +40,10 @@ index_html = '''My first web app! By <strong>{{ author }}</strong>.'''
 def index():
     return template(index_html, author='Real Python')
 
+@route('/adder')
+def adder():
+    return template(adder_html)
+
 @route('/name/<name>')
 def name(name):
     image_filename = f"{name}.jpg"  # Assuming the image format is JPG
